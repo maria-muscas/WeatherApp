@@ -1,0 +1,162 @@
+.location {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  position: relative;
+  z-index: 2;
+}
+.cityName span {
+  font-size: 1.5rem;
+}
+.cityName i {
+  margin-left: 10px;
+  font-size: 1.5rem;
+}
+.fav {
+  margin-right: 10px;
+  text-align: center;
+}
+.fav i {
+  font-size: 1.5rem;
+  color: red;
+}
+.forecast-main {
+  border: 1px solid #ffff;
+  margin: 1rem auto;
+}
+
+.forecast-main div:first-child {
+  font-weight: bold;
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
+  margin-top: 0;
+}
+
+.weather-data {
+  text-align: center;
+  width: 80%;
+  margin: 5rem auto;
+  border: 1px solid #1b67e2;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.45);
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(15px);
+}
+.weather-data img {
+  position: relative;
+  width: 17rem;
+  transform: translateY(-8rem);
+  z-index: -4;
+}
+.weather-data-text {
+  margin-top: -11rem;
+}
+.tempreture {
+  font-size: 5.5rem;
+  margin: 0.5rem;
+  font-weight: bold;
+}
+.actual-data {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+.min-max {
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+  margin-top: 0rem;
+}
+.icon-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+.icon-text i {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.icon-text span {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+.icon-text div {
+  text-align: center;
+}
+.time {
+  font-size: 1.2rem;
+  font-weight: lighter;
+}
+
+@media screen and (min-width: 900px) {
+  .cityName span {
+    z-index: 1;
+    position: relative;
+  }
+  .weather-data img {
+    width: 20rem;
+    height: auto;
+    transform: translateY(-10rem);
+    z-index: -1;
+  }
+  .weather-data-text {
+    margin-top: -13rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .weather-data img {
+    width: 15rem;
+    height: auto;
+    transform: translateY(-8rem);
+  }
+  .weather-data-text {
+    margin-top: -11rem;
+  }
+  .tempreture {
+    font-size: 3rem;
+  }
+  .actual-data {
+    font-size: 1.5rem;
+  }
+  .min-max {
+    font-size: 1.1rem;
+  }
+  .icon-text i {
+    font-size: 1.5rem;
+  }
+  .icon-text span {
+    font-size: 1.1rem;
+  }
+  .cityName i {
+    font-size: 1.3rem;
+  }
+  .cityName span {
+    font-size: 1.3rem;
+  }
+  .fav i {
+    font-size: 1.3rem;
+    margin-top: 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  .cityName i {
+    font-size: 1.1rem;
+  }
+  .cityName span {
+    font-size: 1.1rem;
+  }
+  .fav i {
+    font-size: 1.1rem;
+    margin-top: 0;
+  }
+  .weather-data img {
+    width: 10rem;
+    height: auto;
+    transform: translateY(-5rem);
+  }
+  .weather-data-text {
+    margin-top: -6rem;
+  }
+}

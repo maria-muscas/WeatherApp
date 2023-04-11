@@ -1,0 +1,57 @@
+.cont h2 {
+  margin-bottom: 0px;
+  color: #1b67e2;
+}
+.cont hr {
+  color: black;
+  height: 4px;
+}
+.dayInfo {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "day icon-temp condition";
+  font-size: 1.2rem;
+}
+.dayName {
+  grid-area: day;
+  font-weight: bold;
+}
+.imgTemp {
+  grid-area: icon-temp;
+  justify-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cond {
+  grid-area: condition;
+  justify-self: end;
+}
+@media screen and (max-width: 768px) {
+  .dayInfo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "day icon-temp icon-temp";
+    font-size: 1rem;
+  }
+  .dayName {
+    grid-area: day;
+    font-weight: bold;
+  }
+  .imgTemp {
+    grid-area: icon-temp;
+    justify-self: end;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .cond {
+    display: none;
+  }
+}

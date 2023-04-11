@@ -1,0 +1,157 @@
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.title {
+  text-align: center;
+  font-size: 3rem;
+  line-height: 1.25;
+  letter-spacing: 0.1rem;
+  margin-bottom: 1rem;
+  color: #1b67e2;
+}
+.title span {
+  color: rgb(255, 166, 43);
+  font-size: 3rem;
+}
+.btn-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.btn-weather {
+  background: transparent;
+  border-color: transparent;
+  font-size: 1.25rem;
+  letter-spacing: 0.1rem;
+  margin: 0 0.5rem;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  cursor: pointer;
+  padding: 0.25rem 0;
+  line-height: 1;
+  outline-color: hsl(186, 100%, 94%);
+  color: #c8e0f4;
+  color: #ffa62b;
+}
+.btn-weather:hover {
+  color: #1b67e2;
+  box-shadow: 0 2px #1b67e2;
+}
+.dropdownContainer {
+  position: relative;
+}
+.dropdownMenu {
+  position: absolute;
+  min-width: 160px;
+  z-index: 3;
+  text-align: left;
+  font-size: 1rem;
+  left: 20px;
+  margin-top: 0;
+  color: #1b67e2;
+}
+.nav-btn {
+  color: #ffa62b;
+  font-weight: bold;
+  font-size: 2rem;
+  text-align: center;
+  margin: 0;
+  border: none;
+  outline: none;
+  background: transparent;
+  cursor: pointer;
+  visibility: hidden;
+  opacity: 0;
+}
+.input-group input {
+  outline: none;
+  border: 2px solid #1b67e2;
+  padding: 0.5rem;
+}
+.input-group button {
+  border: 2px solid #1b67e2;
+  background: #1b67e2;
+  font-size: 1rem;
+  padding: 0.5rem;
+}
+.input-group {
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  margin-bottom: 1.5rem;
+}
+.heartIcon {
+  color: red;
+  font-size: 1.5rem;
+}
+.mainSection {
+  width: 90vw;
+  margin: 0rem auto 5rem auto;
+  max-width: 1170px;
+}
+.main-group {
+  width: 80vw;
+  margin: 0 auto;
+  max-width: 1170px;
+}
+
+.footerDiv {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #1b67e2;
+}
+@media screen and (max-width: 570px) {
+  header .nav-btn {
+    visibility: visible;
+    opacity: 1;
+    margin-top: 0;
+  }
+  header .btn-container {
+    position: absolute;
+    top: 149px;
+    left: 0;
+    height: 72vh;
+    flex-direction: column;
+    width: 90%;
+    margin: 0;
+    align-items: center;
+    justify-content: start;
+    background: #bad6ea;
+    transition: 1s;
+    transform: translateX(-100%);
+    z-index: 4;
+  }
+  header .responsive_nav {
+    transform: none;
+  }
+  header .btn-weather {
+    margin: 0;
+    padding: 5px;
+  }
+  .hambInput {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 80%;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 339px) {
+  .searchIcon {
+    display: none;
+  }
+}
